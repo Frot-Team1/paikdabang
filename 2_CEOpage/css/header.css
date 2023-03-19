@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  height: 100px;
+  margin-bottom: 20px;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  transition: 1s;
+}
+header > .main-img {
+  margin-top: 20px;
+  z-index: 100;
+}
+header > .header-img {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  z-index: 100;
+}
+header > .header-img > a:first-of-type {
+  width: 75px;
+  height: 15px;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 5px;
+  color: gray;
+  border-right: 1px solid gray;
+  gap: 10px;
+}
+header > .header-img > div > a > img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ul 시작 */
+
+.ulbox {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+  background-color: white;
+}
+
+.ulbox > img {
+  width: 100%;
+  height: 300pxs;
+  position: absolute;
+  transition: 0.3 ease;
+  z-index: -1;
+}
+header > ul:hover + .ulbox > img {
+  transform: translateY(200px);
+  transition: 0.3s ease;
+}
+
+header > ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  margin-top: 70px;
+  z-index: 50;
+}
+header > ul > li > ul {
+  list-style: none;
+  font-size: 15px;
+  margin-right: 3px;
+  display: block;
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+header > ul > li > ul > li:first-of-type {
+  margin-top: 20px;
+}
+
+header > ul > li > ul > li {
+  display: none;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 0;
+  padding-left: 0;
+  padding-bottom: 5px;
+  flex-wrap: nowrap;
+  width: inherit;
+  height: 20px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+header > ul > li > ul:hover {
+  height: 50px;
+}
+
+header > ul > li > ul:hover > li {
+  display: block;
+}
+header > ul > li > ul:hover > li:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    height: 50px;
+    transition: 1s;
+    position: sticky;
+  }
+  header > .ulbox {
+    display: none;
+  }
+  header > .main-img > a > img {
+    width: 100px;
+    height: 40px;
+    position: fixed;
+    top: 2px;
+    left: 5px;
+  }
+  header > .header-img {
+    display: none;
+  }
+  header > ul {
+    display: none;
+  }
+  header > .menu {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 200;
+    background-color: white;
+  }
+  header > .menu > span {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+  }
+  /* header > #menu {
+      display: none;
+    }
+    header > #menu:checked + .menu {
+      transform: rotate(45deg);
+    }
+    header > #menu:checked + .menu > span:first-of-type {
+      transform: rotate(45deg);
+    } */
+
+  .menu2 {
+    width: 125px;
+    height: 125px;
+    border-radius: 200px;
+    position: absolute;
+    display: flex;
+    background-image: url("https://paikdabang.com/wp-content/themes/paikdabang/assets/images/presentation_btn.png");
+    background-size: cover;
+    cursor: pointer;
+    top: 100px;
+    right: 20px;
+  }
+  .menu3 {
+    width: 125px;
+    height: 125px;
+    border-radius: 200px;
+    position: absolute;
+    display: flex;
+    background-image: url("https://paikdabang.com/wp-content/themes/paikdabang/assets/images/counsel_btn.png");
+    background-size: cover;
+    cursor: pointer;
+    top: 250px;
+    right: 20px;
+  }
+}

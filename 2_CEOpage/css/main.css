@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  z-index: -100;
+}
+
+#content .content-head {
+  background-image: url(../img/main_back.jpg);
+  min-height: 499px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#content .content-head .txt {
+  width: 100%;
+  position: absolute;
+  top: 148px;
+  left: 0;
+}
+
+#content .content-head .txt h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 300;
+  color: #000;
+}
+
+#content .content-head .txt h1::after {
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 32px auto;
+  background-color: #202020;
+  content: " ";
+}
+
+#content .content-head .txt p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+#content .content-head .page-tab {
+  width: 100%;
+  padding: 0 10px 0 10px;
+  font-size: 0;
+  position: absolute;
+  bottom: 41px;
+  left: 0;
+  list-style: none;
+}
+
+#content .content-head .page-tab li {
+  display: inline-block;
+  width: 20%;
+  max-width: 170px;
+  padding: 10px 0 10px 0;
+  border: 1px solid #bfbfbf;
+  border-left: 0;
+  font-size: 1rem;
+  color: #909090;
+  background-color: #fff;
+}
+
+#content .content-head .page-tab .on {
+  color: #000;
+  background-color: #ffe600;
+}
+
+#content .content-head .page-tab li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: none;
+  cursor: pointer;
+}
+
+/* ======================= */
+
+#content .ceo {
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+#content .ceo .ceo-inner {
+  padding: 65px 0 65px 0;
+  max-width: 1670px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+#content .ceo .ceo-inner .ceo-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content .ceo .ceo-inner .ceo-container .title {
+  margin: 0 0 4rem 0;
+  text-align: center;
+}
+
+#content .ceo .ceo-inner .ceo-container .title img {
+  width: 328px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main {
+  margin: 0 -13px;
+}
+#content .ceo .ceo-inner .ceo-container .ceo-main::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-first {
+  width: calc(50% - 50px);
+  margin: 0 25px 30px 25px;
+  word-break: keep-all;
+  float: left;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-first img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-first .sub-tit1 {
+  margin: 2rem 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #071f60;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-first .ceo-profile {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-first .ceo-profile li {
+  list-style-type: disc;
+  font-size: 0.812rem;
+  color: #999;
+  letter-spacing: -0.5px;
+  display: flex;
+}
+#content
+  .ceo
+  .ceo-inner
+  .ceo-container
+  .ceo-main
+  .ceo-first
+  .ceo-profile
+  li
+  :nth-child(1) {
+  color: #000;
+  font-weight: bold;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info {
+  width: calc(50% - 50px);
+  margin: 0 25px 30px 25px;
+  word-break: keep-all;
+  padding: 20px 0 20px 0;
+  float: left;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .info-title {
+  width: 100%;
+  font-size: 1.875rem;
+  line-height: 120%;
+  color: #071f60;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .info-title::after {
+  margin: 2rem 0;
+  width: 37px;
+  height: 2px;
+  background-color: #0e3472;
+  content: "";
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .txt {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  line-height: 170%;
+  font-size: 0.937rem;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .txt span {
+  font-weight: 500;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .ceeo-sign {
+  display: flex;
+  align-items: center;
+  margin: 0 -9px;
+  font-size: 0.937rem;
+  line-height: 150%;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .ceeo-sign span {
+  margin: 0 9px;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .ceeo-sign em {
+  display: block;
+  font-size: 1.25rem;
+  text-align: right;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#content .ceo .ceo-inner .ceo-container .ceo-main .ceo-info .ceeo-sign img {
+  width: 145px;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}

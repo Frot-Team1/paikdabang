@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800;900&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Poor+Story&family=Shantell+Sans&family=Single+Day&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+  font-size: 100%;
+  color: #202020;
+}
+
+.coffee_story .paik_coffee {
+  padding-top: 60px;
+  width: 100%;
+  margin-bottom: 160px;
+  background: url(../img/story_bg.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.paik_coffee .coffee_txt h1 {
+  color: #071f60;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "montserrat";
+}
+.paik_coffee > .coffee_txt > img {
+  width: 70px;
+  height: auto;
+}
+
+.paik_coffee > .coffee_txt > dl > dt {
+  color: #202020;
+  font-size: 24px;
+  font-family: "montserrat";
+  font-weight: 400;
+}
+
+.paik_coffee .coffee_txt dl dd {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  font-family: "montserrat";
+}
+
+.cof_youtube iframe {
+  margin: 0 auto;
+  height: 450px;
+  width: 800px;
+  left: 0;
+  margin-bottom: -80px;
+  margin-top: 30px;
+}
+
+.coffee_intd .coffee_bean {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "montserrat";
+}
+
+.coffee_intd .coffee_bean::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 25px auto 50px;
+  background: #202020;
+}
+
+.coffee_intd .coffee_bean ul {
+  list-style: none;
+}
+
+.coffee_intd .box1 {
+  width: 92%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.coffee_intd ul li .mat_img img {
+  vertical-align: middle;
+  width: 520px;
+  height: 595px;
+}
+
+.coffee_intd > .box1 > ul > li {
+  width: 1150px;
+  height: 596px;
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.coffee_intd .box1 ul li .spe_coffee:nth-child(1) {
+  margin-right: 70px;
+}
+
+.coffee_intd .box1 ul li .spe_coffee:nth-child(2) {
+  margin-left: 110px;
+}
+
+.coffee_intd .box1 ul li .spe_coffee h3 {
+  color: #071f60;
+  font-size: 50px;
+  font-family: "montserrat";
+  font-weight: 900;
+}
+
+.coffee_intd .box1 ul li dl dt {
+  font-size: 28px;
+  font-family: "montserrat";
+  font-weight: 700;
+  margin-top: 50px;
+  line-height: 50px;
+  width: 270px;
+}
+
+.coffee_intd .box1 ul li dl dt strong {
+  background-color: #ffe600;
+  padding: 3px 8px;
+  box-sizing: inline-block;
+  font-weight: 900;
+  font-family: "montserrat";
+  color: #071f60;
+}
+
+.coffee_intd .box1 ul li .blending dd {
+  color: #606060;
+  font-weight: 300;
+  font-family: "montserrat";
+  line-height: 1.4em;
+  margin: 30px 0 0;
+  width: 340px;
+  font-size: 20px;
+}
+
+.coffee_intd .box1 ul li .scaa {
+  background-color: #f5f5f5;
+  color: #606060;
+  padding: 20px 25px;
+  margin-top: 60px;
+  line-height: 26px;
+  font-size: 18px;
+  width: 520px;
+  letter-spacing: -1px;
+}
+
+.coffee_intd .box1 ul li .scaa strong {
+  color: #071f60;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "montserrat";
+}
+
+.veloso dt {
+  width: 320px;
+}
+
+.coffee_intd .box1 ul li .veloso dd {
+  color: #606060;
+  font-weight: 300;
+  font-family: "montserrat";
+  line-height: 1.4em;
+  margin: 30px 0 0;
+  width: 360px;
+  font-size: 20px;
+}
+
+.new_crop_coffee {
+  width: 450px;
+  margin-right: 130px;
+}
+
+.coffee_intd .box1 ul li .new_crop dd {
+  color: #606060;
+  font-weight: 300;
+  font-family: "montserrat";
+  line-height: 1.4em;
+  margin: 30px 0 0;
+  width: 400px;
+  font-size: 20px;
+}
+
+.spe_coffee_1 {
+  margin-left: 20px;
+}
+
+.coffee_intd .box1 ul li .dot_proc dd {
+  color: #606060;
+  font-weight: 300;
+  font-family: "montserrat";
+  line-height: 1.4em;
+  margin: 30px 0 0;
+  width: 400px;
+  font-size: 20px;
+}
+
+.coffee_intd .box1 ul li .spe_coffee:nth-child(2) dl dt {
+  width: 310px;
+}
+
+.sca {
+  background-color: #f5f5f5;
+  color: #606060;
+  padding: 20px 25px;
+  margin-top: 60px;
+  line-height: 26px;
+  font-size: 18px;
+  width: 500px;
+  letter-spacing: -2px;
+}
+
+.sca strong {
+  color: #071f60;
+  font-weight: 900;
+  font-family: "montserrat";
+  letter-spacing: 0;
+}
+
+.cupping_note_container {
+  margin: 120px 0;
+  background-color: #f5f5f5;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.cupping_note_container .cupping_note {
+  margin: 0 auto 80px;
+}
+
+.cupping_note_container .cupping_note .coffee_bean_1 {
+  font-weight: 700;
+  font-family: "montserrat";
+  font-size: 45px;
+}
+
+.cupping_note_container .cupping_note .coffee_bean_1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 25px auto 50px;
+  background: #202020;
+}
+
+.cupping_note_container > .cupping_note > .cup_note_mat > p {
+  color: #606060;
+  font-size: 22px;
+  font-family: "montserrat";
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.cupping_note_container > .cupping_note > .cup_note_mat > p > .cup_note_txt {
+  display: inline-block;
+  width: 700px;
+}
+
+.cupping_note_container .cupping_note .cup_note_mat ul {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  list-style: none;
+}
+
+.cupping_note_container .cupping_note .cup_note_mat ul p {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.cupping_note_container .cupping_note .cup_note_mat ul li:nth-child(1) span {
+  display: block;
+  background: url(../img/story_icon01.png) no-repeat center #fff;
+  background-size: 60px auto;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cupping_note_container .cupping_note .cup_note_mat ul li:nth-child(2) span {
+  display: block;
+  background: url(../img/story_icon02.png) no-repeat center #fff;
+  background-size: 60px auto;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cupping_note_container .cupping_note .cup_note_mat ul li:nth-child(3) span {
+  display: block;
+  background: url(../img/story_icon04.png) no-repeat center #fff;
+  background-size: 60px auto;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.cupping_note_container .cupping_note .coffee_bean_1 .cup_note_mat {
+  font-weight: 300;
+  font-family: "montserrat";
+  color: #606060;
+}
+
+.coffee_taste {
+  width: 1500px;
+  max-width: 1150px;
+  margin: 0 auto 80px;
+  padding: 50px 100px;
+  background: #fff;
+}
+
+.coffee_taste h3 {
+  color: #071f60;
+  font-size: 30px;
+  font-family: "montserrat";
+  font-weight: 700;
+}
+
+.coffee_taste > .taste_graph {
+  margin-top: 60px;
+}
+
+.coffee_taste .taste_graph ul li {
+  width: 100%;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.coffee_taste .taste_graph ul li > p {
+  width: 100px;
+  line-height: 150%;
+  font-size: 20px;
+  float: left;
+}
+
+.coffee_taste .taste_graph ul li > .tt_graph {
+  width: calc(100% - 100px);
+  line-height: 30px;
+  display: flex;
+  margin: 0;
+}
+.coffee_taste .taste_graph ul li span {
+  display: inline-block;
+  width: 19%;
+  height: 12px;
+  margin-right: 1.25%;
+  background: #e5e5e5;
+  border-radius: 6px 6px;
+}
+
+.coffee_taste .taste_graph ul li .on {
+  background-color: #ffe600;
+}
+
+.coffee_taste .taste_graph .taste_degree > span {
+  font-size: 16px;
+  display: inline-block;
+  width: 25%;
+  margin-left: 100px;
+  text-align: center;
+  font-weight: 700;
+  color: #505050;
+}
+
+.coffee_taste > .taste_graph > .taste_degree {
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+.coffee_taste > .taste_graph > .taste_degree > span:nth-child(1) {
+  margin-left: 0;
+}
+
+.coffee_taste > .taste_graph > .taste_degree > span {
+  font-size: 16px;
+}
+
+.roasting_point {
+  width: 1500px;
+  max-width: 1150px;
+  margin: 0 auto 80px;
+  padding: 50px 100px;
+  background: #fff;
+}
+
+.roasting_point h3 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "montserrat";
+  color: #071f60;
+}
+
+.roasting_point .roasting_point_bar {
+  margin-top: 60px;
+}
+
+.roasting_point .roasting_point_bar .roasting_pt_txt {
+  font-weight: 700;
+  font-size: 16px;
+  color: #505050;
+}
+
+.roasting_point .roasting_point_bar .roasting_pt_txt span {
+  width: 100%;
+  margin-right: 330px;
+}
+
+.roasting_point .roasting_point_bar .roasting_pt_txt span:last-child {
+  margin: 0;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree {
+  margin-top: 23px;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree .on > p {
+  font-weight: 700;
+  color: #071f60;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree li p {
+  font-size: 20px;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree li {
+  margin-top: 20px;
+  position: relative;
+  width: 16.6666%;
+  font-size: 16px;
+  color: #202020;
+  text-align: center;
+  z-index: 1;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree:before {
+  height: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8.333%;
+  width: 83.3334%;
+  background-color: #dedede;
+  z-index: 0;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree:after {
+  height: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 58.3331%;
+  width: 16.6666%;
+  background: #ffe600;
+  z-index: 0;
+}
+
+.roasting_point .roasting_point_bar .roasting_degree li:before {
+  width: 15px;
+  height: 15px;
+  top: -26px;
+  border: 3px solid #dedede;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-left: -5px;
+  border-radius: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.signature_menu {
+  margin: 120px 0;
+  padding: 120px 0;
+}
+
+.signature_menu .menu_txt h2 {
+  text-align: center;
+  font-weight: 700;
+  font-family: "montserrat";
+  font-size: 45px;
+}
+
+.signature_menu .menu_txt::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 2px;
+  margin: 25px auto 50px;
+  background: #202020;
+}
+
+.signature_menu > ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.signature_menu ul li img {
+  border: 3px solid #ffe600;
+}
+
+.signature_menu ul li dl dt {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "montserrat";
+}
+
+.signature_menu ul li dl {
+  margin-top: 15px;
+}
+
+.signature_menu ul li dl dd {
+  width: 260px;
+  margin-top: 15px;
+  color: #606060;
+  font-weight: 300;
+  font-family: "montserrat";
+  line-height: 1.3em;
+  font-size: 18px;
+}
