@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    max-width: 1920px;
+    margin: auto;
+    font-family: "Montserrat", "Noto Sans KR", AppleGothic, sans-serif;
+    color: #202020;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/* ***** */
+/* 이미지 있는 헤더 부분 wrap */
+/* ***** */
+#menu-header_wrap {
+    min-height: 499px;
+    background: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/bg-menu.jpg) no-repeat center / cover;
+    padding: 0 10px;
+    text-align: center;
+    position: relative; /* 텍스트와 메뉴탭 배치 위해서 */
+}
+/* 이미지 안 텍스트 */
+.text {
+    width: 100%;
+    position: absolute;
+    top: 148px;
+    left: 0;
+}
+.text > h1 {
+    font-size: 42px;
+    font-weight: 300;
+}
+.text > h1::after {
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 32px auto;
+    background: #202020;
+    content: "";
+}
+.text > p {
+    font-size: 19px;
+    font-weight: 300;
+}
+/* 이미지 안 메뉴 탭 */
+.menu-tab {
+    width: 100%;
+    font-size: 0;
+    position: absolute;
+    bottom: 41px;
+    left: 0;
+}
+.menu-tab > li {
+    display: inline-block;
+    width: 20%;
+    max-width: 170px;
+    padding: 10px 0;
+    border: 1px solid #bfbfbf;
+    border-left: 0;
+    font-size: 15px;
+    color: #909090;
+    background: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.menu-tab > li:first-child {
+    border: 1px solid #bfbfbf;
+}
+.menu-tab > li:hover,
+.menu-tab > li.on {
+    color: #000;
+    background: #ffe600;
+    font-weight: bold;
+}
+.menu-tab a {
+    display: block;
+}
+
+/* ***** */
+/* 이미지 있는 헤더 부분 아래 컨텐트 wrap */
+/* ***** */
+#menu-content_wrap {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 90px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ***** */
+/* "사과 신메뉴 2종" 글자 */
+#menu-content_wrap > h2:first-of-type {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ***** */
+/* iframe 비디오 */
+.video {
+    padding: 20px 0 50px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+/* ***** */
+/* "추천 메뉴" 글자 */
+#menu-content_wrap > h2:last-of-type {
+    text-align: center;
+    font-size: 35px;
+    color: #071f60;
+}
+#menu-content_wrap > h2:last-of-type::after {
+    display: block;
+    width: 58px;
+    height: 3px;
+    margin: 16px auto 96px;
+    background: #0e347e;
+    content: "";
+}
+
+/* ***** */
+/* 메뉴 슬라이드 */
+.swiper {
+    margin-bottom: 80px;
+    padding: 0 50px;
+    position: relative;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.swiper-slide {
+    width: 343.333px;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+}
+/* 이미지 */
+.swiper-slide > img {
+    width: 245px;
+}
+/* 메뉴명 */
+.best-tit {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* BEST 아이콘 */
+.best-icon {
+    background-color: #0e347e;
+    color: #ffe600;
+    display: inline-block;
+    width: 69px;
+    height: 69px;
+    line-height: 69px;
+    border-radius: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+/* 좌우 버튼 */
+/* 좌우 버튼 */
+.swiper-button-prev {
+    color: transparent;
+    background: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/prev-ico.png) no-repeat center / 27px
+        44px;
+}
+.swiper-button-next {
+    color: transparent;
+    background: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/next-ico.png) no-repeat center / 27px
+        44px;
+}
+
+/* ***** */
+/* 상세 설명 */
+.info {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    border: 8px solid #fff;
+    padding: 30px 22px 9px;
+    background: rgba(255, 230, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.show {
+    visibility: visible;
+    opacity: 100;
+}
+/* x 버튼 */
+.close-btn {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 11px;
+    top: 13px;
+    border: 0;
+    cursor: pointer;
+    background: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/menu-close.png) no-repeat center /
+        cover;
+}
+/* 메뉴명 */
+.menu-tit1 {
+    font-size: 24px;
+    columns: #000;
+    font-weight: bold;
+}
+/* 메뉴명 영어 */
+.menu-tit2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 130%;
+    font-size: 15px;
+}
+.menu-tit2::after {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 5px 0;
+    background: #202020;
+    content: "";
+}
+/* 설명글 */
+.txt {
+    font-weight: 300;
+    font-size: 13px;
+}
+/* 안내 문장 */
+.msg {
+    font-size: 10px;
+    color: #403a02;
+    position: absolute;
+    left: 22px;
+    bottom: 9px;
+}
+/* 성분 테이블 */
+.ingredient-table-wrap {
+    position: absolute;
+    bottom: 35px;
+    left: 2.5%;
+    width: 95%;
+}
+.ingredient-table-wrap > p {
+    font-size: 13px;
+    color: #000;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    letter-spacing: -0.25px;
+}
+.ingredient-table {
+    font-size: 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+.ingredient-table > li {
+    display: inline-block;
+    width: 50%;
+}
+.ingredient-table > li:nth-child(2n + 1) {
+    border-right: 1px solid #555;
+}
+.ingredient-table div {
+    padding: 7px 3px;
+    font-size: 12px;
+    display: inline-block;
+    letter-spacing: -1px;
+}
+.ingredient-table div:nth-child(2n) {
+    text-align: right;
+    float: right;
+}
+
+/* ***** */
+/* sns 링크 */
+.sns-icon {
+    font-size: 0;
+    margin: 0 -9px;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+.sns-icon > li {
+    display: inline-block;
+    margin: 0 9px;
+}
+.sns-icon img {
+    width: 32px;
+}
