@@ -1,0 +1,128 @@
+.sub-img{
+    background-image: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/bg-menu3.jpg);
+    background-position-x: center;
+    height: 499px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    top: 258px;
+}
+.text>h1{
+    font-size: 44px;
+    font-weight: 300;
+}
+.text>h1::after{
+    width: 40px;
+    height: 1.5px;
+    display: block;
+    background-color: black;
+    content: '';
+    margin: 26px auto 30px auto;
+
+}
+.text>p{
+    font-weight: 300;
+    font-size: 20px;
+}
+.menu-nav{
+    position: absolute;
+    width: 100%;
+    bottom: 172px;
+}
+.menu-nav>ul{
+    display: flex;
+    justify-content: center;
+}
+.menu-nav>ul>li{
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    width: 169px;
+    height: 36px;
+    background-color: white;
+    line-height: 36px;
+}
+li>a{
+    color: #909090;
+    display: flex;
+    justify-content: center;
+}
+.menu-nav>ul>li:nth-child(3){
+    background-color: #ffe600;
+}
+.drink>a{
+    color: black;
+    width: 100%;
+}
+.menu-nav>ul>li:hover{
+    background-color: #ffe600;
+    transition: 0.2s ease-in; /* 부드럽게 호버 */
+}
+.menu-nav>ul>li>a:hover{
+    color: black;
+}
+.menu-nav>ul>li:last-child{
+    border-right: 1px solid #bfbfbf;
+    transition: 0.2s ease-in;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1150px;
+    margin: 0 auto;
+}
+.container>h2{
+    font-weight: 700;
+    font-size: 35px;
+    color: #071f60;
+    margin: 80px auto;
+}
+.container>h2::after{
+    width: 45%;
+    height: 3px;
+    background-color: #071f60;
+    display: block;
+    content: '';
+    margin: 12px auto;
+}
+.menu-list>li{
+    float: left;
+    border: 1px solid #dcdcdc;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+.menu-list>li:hover{
+    border: #071f60 1px solid;
+}
+.menu-list>li>p{
+    display: flex;
+    justify-content: center;
+}
+.menu-list>li>img{
+    width: 245.9px;
+}
+#click{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 230, 0, 0.8);
+    top: 0;
+    left: 0;
+    border: white solid 9px;
+    box-sizing: border-box;
+    display: none;
+}
+.drink-slide>ul{
+    display: flex;
+}
+.drink-slide>ul>li>img{
+
+    width: 245.9px;
+}
